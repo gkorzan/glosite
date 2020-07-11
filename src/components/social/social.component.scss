@@ -1,0 +1,18 @@
+.social a {
+  font-size: 24pt;
+  padding: 1rem;
+}
+.fa-facebook,
+.fa-vk,
+.fa-odnoklassniki,
+.fa-instagram {
+  color: #212529;
+}
+.fa-facebook,
+.fa-vk,
+.fa-odnoklassniki,
+.fa-instagram {
+  &:hover {
+    color: #d5d5d5;
+  }
+}
