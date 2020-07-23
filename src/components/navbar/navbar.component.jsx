@@ -1,13 +1,16 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
+import logo from "../../GlowWwork_Name.png";
+import "./navbar.component.scss";
+
 class NavbarComponent extends Component {
   state = {};
   render() {
     return (
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">
-          Navbar
+          <img class="logo_name" src={logo}/>
         </a>
         <button
           class="navbar-toggler"
@@ -23,31 +26,21 @@ class NavbarComponent extends Component {
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item" id="home">
-              <Link class="nav-link" to="/">
-                Home
+            <li class="nav-item px-3" id="home">
+              <Link class="nav-link text-primary" to="/">
+                <h3 class="nav">Главная</h3>
               </Link>
               {/* <a class="nav-link" href="#">
                 Home <span class="sr-only">(current)</span>
               </a> */}
             </li>
-            <li class="nav-item" id="call">
-              <Link class="nav-link" to="/call">
-                Call
+            <li class="nav-item px-3" id="call">
+              <Link class="nav-link text-primary" to="/call">
+                <h3 class="nav">Позвонить</h3>
               </Link>
               {/* <a class="nav-link" href="#">
                 Link
               </a> */}
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link disabled"
-                href="#"
-                tabindex="-1"
-                aria-disabled="true"
-              >
-                Disabled
-              </a>
             </li>
           </ul>
         </div>

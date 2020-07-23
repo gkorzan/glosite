@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import $ from "jquery";
-import Navbar from "./navbar.component";
+import Navbar from "./navbar/navbar.component";
 
 class OrderCallComponent extends Component {
   state = {};

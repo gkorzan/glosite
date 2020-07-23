@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 
-import "./welcome.component.scss";
 
-import NavbarComponent from "../navbar.component";
+import NavbarComponent from "../navbar/navbar.component";
 import SocialComponent from "../social/social.component";
 import { wait } from "@testing-library/react";
+
+
+import "./welcome.component.scss";
 
 class WelcomeComponent extends Component {
   state = {};
