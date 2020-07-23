@@ -32,7 +32,7 @@ class WhatHowWhyComponent extends Component {
           unwilling arranging of determine. Beyond rather sooner so if up wishes
           or.{" "}
         </CardComponent>
-        <hr className="my-4"></hr>
+        {/* <hr className="my-4"></hr> */}
       </div>
     );
   }

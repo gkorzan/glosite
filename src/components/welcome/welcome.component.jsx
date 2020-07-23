@@ -1,10 +1,8 @@
 import React, { Component } from "react";
 
-
 import NavbarComponent from "../navbar/navbar.component";
 import SocialComponent from "../social/social.component";
 import { wait } from "@testing-library/react";
-
 
 import "./welcome.component.scss";
 
@@ -28,7 +26,7 @@ class WelcomeComponent extends Component {
                 </h3>
               </div>
               <div class="col-3"></div>
-              <SocialComponent></SocialComponent>
+              {/* <SocialComponent></SocialComponent> */}
             </div>
           </div>
         </div>

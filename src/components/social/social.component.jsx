@@ -9,12 +9,6 @@ class SocialComponent extends Component {
         <a href="{{ links.vk }}" target="{{ target }}">
           <i class="fab fa-vk"></i>
         </a>
-        <a href="#">
-          <i class="fab fa-facebook"></i>
-        </a>
-        <a href="#">
-          <i class="fab fa-odnoklassniki"></i>
-        </a>
         <a href="{{ links.inst }}" target="{{ target }}">
           <i class="fab fa-instagram"></i>
         </a>

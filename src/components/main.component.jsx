@@ -15,7 +15,7 @@ class MainComponent extends Component {
         <Welcome></Welcome>
         {/* <But text="Call ME!" phone="+79811275720"></But> */}
         <WHW></WHW>
-        <ContactUs></ContactUs>
+        {/* <ContactUs></ContactUs> */}
       </React.Fragment>
     );
   }
