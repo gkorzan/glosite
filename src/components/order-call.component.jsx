@@ -14,7 +14,7 @@ class OrderCallComponent extends Component {
       <React.Fragment>
         <Navbar></Navbar>
         <h3 class="text-center uppercase md-5">
-          Вы нажали кнопку обратной связи
+          Вы нажали кнопку обратной связи<span id="cursor">|</span>
         </h3>
         <div class="row text-center">
           <div class="col-4"></div>
