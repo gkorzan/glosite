@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import $ from "jquery";
 import Navbar from "./navbar/navbar.component";
 
+import "./order-call.component.scss";
+
 class OrderCallComponent extends Component {
   state = {};
 
@@ -11,18 +13,16 @@ class OrderCallComponent extends Component {
 
   render() {
     return (
-      <React.Fragment>
+      <div>
         <Navbar></Navbar>
-        <h3 class="text-center uppercase md-5">
-          Вы нажали кнопку обратной связи
+        <h3 class="text-center uppercase py-5">
+          Пожалуйста, заполните поля формы
         </h3>
-        <div class="row text-center">
-          <div class="col-4"></div>
-
-          <form class="col-4">
-            <div class="mb-3">
+        <div class="form-container container-sm text-center ">
+          <form class="form-container ">
+            <div class="pb-4">
               <label for="exampleFormControlInput1" class="form-label">
-                Как к вам обращаться?
+                <h4>Как к вам обращаться?</h4>
               </label>
               <input
                 type="name"
@@ -32,21 +32,21 @@ class OrderCallComponent extends Component {
                 required
               />
             </div>
-            <div class="mb-3">
+            <div class="pb-4">
               <label for="phone" class="form-label">
-                Как с вами связаться?
+                <h4>Как с вами связаться?</h4>
               </label>
               <input
                 type="phone"
                 class="form-control"
                 id="phone"
-                placeholder="Номер моего почтового голубя: +77172374106"
+                placeholder=" Почтовый голубь +77172374106"
                 required
               />
             </div>
-            <div class="mb-3">
+            <div class="pb-5">
               <label for="other" class="form-label">
-                Дополнительная информация?
+                <h4>Дополнительная информация</h4>
               </label>
               <textarea
                 class="form-control"
@@ -55,14 +55,15 @@ class OrderCallComponent extends Component {
                 placeholder="Удобное время или что-то ещё..."
               ></textarea>
             </div>
-            <button type="submit" class="btn btn-primary btn-lg btn-block">
-              Submit
+            <button
+              type="submit"
+              class="btn btn-outline-primary btn-lg btn-block"
+            >
+              Отправить
             </button>
           </form>
-
-          <div class="col-4"></div>
         </div>
-      </React.Fragment>
+      </div>
     );
   }
 }
