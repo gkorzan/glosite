@@ -15,8 +15,8 @@ class OrderCallComponent extends Component {
     return (
       <div>
         <Navbar></Navbar>
-        <h3 class="text-center uppercase py-5">
-          Пожалуйста, заполните поля формы
+        <h3 class="text-center uppercase md-5">
+          Вы нажали кнопку обратной связи<span id="cursor">|</span>
         </h3>
         <div class="form-container container-sm text-center ">
           <form class="form-container ">
