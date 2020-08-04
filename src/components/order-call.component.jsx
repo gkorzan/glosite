@@ -30,12 +30,12 @@ class OrderCallComponent extends Component {
       url: "http://localhost:8080/api/v1/call",
       // mode: "no-cors",
       headers: {
-        "access-control-allow-headers":
-          "access-control-allow-origin, content-type",
-        "Access-Control-Allow-Origin": "*",
-        "Content-Type": "x-www-form-urlencoded",
+        // "access-control-allow-headers":
+        //   "access-control-allow-origin, content-type",
+        // "Access-Control-Allow-Origin": "*",
+        "Content-Type": "application/json",
       },
-      data: { name: "post i post che buhtet' to" },
+      data: data,
     })
       .then((res) => {
         console.log(res.status);
@@ -60,11 +60,11 @@ class OrderCallComponent extends Component {
   componentDidMount() {
     axios(`http://localhost:8080/api/v1/`, {
       method: "GET",
-      mode: "no-cors",
+      // mode: "no-cors",
       headers: {
-        "access-control-allow-headers":
-          "access-control-allow-origin, content-type",
-        "Access-Control-Allow-Origin": "*",
+        // "access-control-allow-headers":
+        //   "access-control-allow-origin, content-type",
+        // "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
       },
     })
