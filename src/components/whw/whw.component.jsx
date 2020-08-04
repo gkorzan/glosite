@@ -10,7 +10,7 @@ class WhatHowWhyComponent extends Component {
   state = {};
   render() {
     return (
-      <div class="container-fluid">
+      <div class="container">
         <CardComponent title="Для кого?" buttonText="Кнопка" cardImg={img1}>
           Абсолютно для всех. Вы владеете своей парикмахерской или кофейней,
           создаете кондитерские чудеса или организовываете праздники, а может
@@ -30,9 +30,12 @@ class WhatHowWhyComponent extends Component {
           упростить вашу работу. Мы воплощаем ваши идеи в реальность, сохраняя
           их особенный стиль. Мы помогаем сохранить ваше время, а значит деньги.
           Мы непрерывно развиваемся, чтобы выполнить ваш заказ наилучшим
-          образом. Мы на связи, чтобы ответить на ваши вопросы. Ваш сайт &#8212;
-          наша работа!
+          образом. Мы на связи, чтобы ответить на ваши вопросы.
         </CardComponent>
+        <br />
+        <div class="container text-center description">
+          Ваш сайт &#8212; наша работа!
+        </div>
         {/* <hr className="my-4"></hr> */}
       </div>
     );

@@ -9,9 +9,9 @@ class NavbarComponent extends Component {
   render() {
     return (
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-          <img class="logo_name" src={logo}/>
-        </a>
+        <Link class="navbar-brand" to="/">
+          <img class="logo_name" src={logo} />
+        </Link>
         <button
           class="navbar-toggler"
           type="button"
