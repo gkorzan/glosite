@@ -3,6 +3,7 @@ import Navbar from "./navbar/navbar.component";
 import axios from "axios";
 
 import "./order-call.component.scss";
+import config from "../config/dev.json"
 
 class OrderCallComponent extends Component {
   state = {
@@ -27,12 +28,8 @@ class OrderCallComponent extends Component {
     };
     axios({
       method: "POST",
-      url: "http://localhost:8080/api/v1/call",
-      // mode: "no-cors",
+      url: config.baseUrl + "/api/v1/call",
       headers: {
-        // "access-control-allow-headers":
-        //   "access-control-allow-origin, content-type",
-        // "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
       },
       data: data,
@@ -43,7 +40,6 @@ class OrderCallComponent extends Component {
       .catch((err) => {
         console.error(err);
       });
-    console.log(data);
     e.preventDefault();
   }
 
@@ -58,13 +54,10 @@ class OrderCallComponent extends Component {
     this.setState({ other: e.target.value });
   }
   componentDidMount() {
-    axios(`http://localhost:8080/api/v1/`, {
+    axios({
       method: "GET",
-      // mode: "no-cors",
+      url: config.baseUrl + "/api/v1/",
       headers: {
-        // "access-control-allow-headers":
-        //   "access-control-allow-origin, content-type",
-        // "Access-Control-Allow-Origin": "*",
         "Content-Type": "application/json",
       },
     })
